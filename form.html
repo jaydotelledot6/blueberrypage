@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+			<title>Blueberry Madness</title>
+	</head>
+	
+<body>
+	<header>
+		<h1>Blueberry Madness Form</h1>
+		
+	</header>
+	
+	<nav><h2>Navigation</h2>
+		<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="types.html">Types of Blueberries</a></li>
+			<li><a href="recipes.html">Recipes</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="form.html">Form</a></li>
+		</ul>
+</nav>
+<main>
+	<article>
+	
+		<div>If you would like to subscribe, please fill out the following form:</div>
+		<section>
+	<form method="post" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+		
+		<fieldset>
+		<legend>Personal Information:</legend>
+		First name:
+		<input type="text" name="firstname" id="firstname" autofocus required autocomplete="on">
+		<br>
+		<br>
+		Last name:
+		<input type="text" name="lastname" id="lastname" required autocomplete="on">
+		<br>
+		<br>
+
+		Gender: 
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="male" value="male" checked>
+		<label for="female">Female</label>
+		<input type="radio" name="gender" id="female" value="female">
+		<br>
+		<br>
+		
+		Birthday:
+		<input type="date" name="birthday" id="birthday" autocomplete="on" value="2001-01-11">
+		<br>
+		<br>
+		</fieldset>
+		<fieldset>
+		<legend>Contact Information:</legend>
+		Email: 
+		<input type="email" name="email" id="email" placeholder="e.g. blueberrylover@gmail.com" required autocomplete="on">
+		<br>
+		<br>
+		Phone Number: 
+		<input type="tel" name="telephone" id="telephone" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" placeholder="enter with dashes, e.g. 123-456-7890" required  autocomplete="on">
+		<br>
+		<br>
+		Zip Code: 
+		<input type="text" name="zipcode" id="zip" pattern="^[0-9]{5}$" placeholder="Like 12345">
+		</fieldset>
+		<fieldset>
+		<legend>Fun blueberry-related stuff:</legend>
+		What is your favorite food that contains blueberries?
+		<input type="text" name="favorite" id="favorite" list="suggestions">
+			<datalist id="suggestions">
+				<option value="Blueberry Pancakes"></option>
+				<option value="Blueberry Pie"></option>
+				<option value="Blueberry Cobbler"></option>
+				<option value="Blueberry Muffins"></option>
+				<option value="Blueberry Bars"></option>
+				<option value="Blueberry French Toast"></option>
+			</datalist>
+		<br>
+		<br>
+		If you have a link to your favorite recipe, please enter it below:
+		<input type="url" name="recipelink" id="recipelink" placeholder="e.g., http://www.deliciousrecipes.com/recipes/mouthwateringblueberrypierecipe">
+		<br>
+		<br>
+		How often do you eat blueberries?
+		<label for="once_month">Once a Month</label>
+		<select id="how_often">
+		<option value="once_week">Once a week</option>
+		<option value="once_month">Once a month</option>
+		<option value="several_week">Several times a week</option>
+		<option value="daily">Every day</option>
+		</select>
+		<br>
+		<br>
+		
+		Why do you eat blueberries? (check all that apply)<br>
+		<input type="checkbox" name="why" value="taste">Their taste<br>
+		<input type="checkbox" name="why" value="vitamins">Their vitamin C and/or K content<br>
+		<input type="checkbox" name="why" value="antioxidants">Great source of antioxidants<br>
+		<input type="checkbox" name="why" value="fiber">Great source of fiber<br>
+		<input type="checkbox" name="why" value="heart">Heart benefits<br>
+		<input type="checkbox" name="why" value="minerals">Their copper and/or manganese content<br>
+		<br>
+		Is there anything else you would like to mention regarding blueberries?
+		<textarea rows="20" cols="40" name="comments" id="comments"></textarea>
+		</fieldset>
+		<br>
+		<br>
+			
+		<button type="submit" value="Submit">Submit</button>
+		<input type="image" src="" alt="Submit">
+		<button type="reset" value="Reset">Reset</button>
+		<button type="submit" value="save" formnovalidate>Save</button>
+	</form>
+	</section>
+	</article>
+</body>
+
+</html>
