@@ -1,13 +1,14 @@
 <!DOCTYPE html> 
 
-<html>
+<html lang="en">
 	<head>
+<meta charset="UTF-8">
 			<title>Blueberry Madness</title>
 	</head>
 	
 <body>
 	<header>
-			<h1><a href="index.html">About Us</a></h1>
+			<h1>About Us</h1>
 	</header>
 	<nav><h2>Navigation</h2>
 		<ul class="menu">
@@ -19,6 +20,7 @@
 </nav>
 <main>
 	<article>
+		<h2>About Us</h2>
 		<section>
 			<h3>Our Mission</h3>
 				<p>Our mission here at Blueberry Madness is to teach the wonderful benefits of blueberries. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -28,7 +30,7 @@
 		<p>If you have any questions about our products or services, <mark>please do not hesitate to contact us immediately!</mark> Our contact information is as follows:</p>
 		<div itemscope itemtype="http://schema.org/Organization">
 			<span itemprop="name">Blueberry Madness</span><br>
-			<span itemprop="address" itemscope itemtype=http://schema.org/PostalAddress">
+			<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 				<span itemprop="streetAddress">2233 Coast View Dr.</span><br>
 				<span itemprop="postalCode">90265</span><br>
 				<span itemprop="addressLocality">Malibu</span><br>
@@ -42,6 +44,111 @@
 			<aside>If you need help immediately, please either call or visit our website to chat with one of our representatives.</aside>
 		</section>
 	</article>
+		<section>
+		<h3>Form</h3>
+		<p>If you would like to subscribe, please fill out the following form:</p>
+			
+	<form method="post" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+		
+		<fieldset>
+		<legend>Personal Information:</legend>
+		<br>
+		<br>
+		First name:
+		<input type="text" name="firstname" id="firstname" autofocus required autocomplete="on">
+		<br>
+		<br>
+		Last name:
+		<input type="text" name="lastname" id="lastname" required autocomplete="on">
+		<br>
+		<br>
+
+		Gender: 
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="male" value="male" checked>
+		<label for="female">Female</label>
+		<input type="radio" name="gender" id="female" value="female">
+		<br>
+		<br>
+		
+		Birthday:
+		<input type="date" name="birthday" id="birthday" autocomplete="on" value="2001-01-11">
+		<br>
+		<br>
+		</fieldset>
+		<fieldset>
+		<legend>Contact Information:</legend>
+		<br>
+		<br>
+		Email: 
+		<input type="email" name="email" id="email" placeholder="blueberrylover@gmail.com" required autocomplete="on">
+		<br>
+		<br>
+		Phone Number: 
+		<input type="tel" name="telephone" id="telephone" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" placeholder="123-456-7890" autocomplete="on">
+		<br>
+		<br>
+		Zip Code: 
+		<input type="text" name="zipcode" id="zip" pattern="^[0-9]{5}$" placeholder="12345">
+		<br>
+		<br>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Fun blueberry-related stuff:</legend>
+		<br>
+		<br>
+		What is your favorite food that contains blueberries?
+		<input type="text" name="favorite" id="favorite" list="suggestions">
+			<datalist id="suggestions">
+				<option value="Blueberry Pancakes"></option>
+				<option value="Blueberry Pie"></option>
+				<option value="Blueberry Cobbler"></option>
+				<option value="Blueberry Muffins"></option>
+				<option value="Blueberry Bars"></option>
+				<option value="Blueberry French Toast"></option>
+			</datalist>
+		<br>
+		<br>
+		If you have a link to your favorite recipe, please enter it below:
+		<input type="url" name="recipelink" id="recipelink" placeholder="http://www.deliciousrecipes.com/recipes/mouthwateringblueberrypierecipe" size="30">
+		<br>
+		<br>
+		How often do you eat blueberries?
+		<select id="how_often">
+		<option value="once_week">Once a week</option>
+		<option value="once_month">Once a month</option>
+		<option value="several_week">Several times a week</option>
+		<option value="daily">Every day</option>
+		</select>
+		<br>
+		<br>
+		
+		Why do you eat blueberries? (check all that apply)
+		<br>
+		<br>
+		<input type="checkbox" name="why" value="taste">Their taste<br>
+		<input type="checkbox" name="why" value="vitamins">Their vitamin C and/or K content<br>
+		<input type="checkbox" name="why" value="antioxidants">Great source of antioxidants<br>
+		<input type="checkbox" name="why" value="fiber">Great source of fiber<br>
+		<input type="checkbox" name="why" value="heart">Heart benefits<br>
+		<input type="checkbox" name="why" value="minerals">Their copper and/or manganese content<br>
+		<br>
+		Is there anything else you would like to mention regarding blueberries?
+		<br>
+		<br>
+		<textarea rows="20" cols="30" name="comments" id="comments"></textarea>
+		</fieldset>
+		<br>
+		<br>
+			
+		<button type="submit" value="Submit">Submit</button>
+		<input type="image" src="images/pie_icon.jpg" alt="Blueberry Pie Submit Button">
+		<button type="reset" value="Reset">Reset</button>
+		
+	</form>
+	</section>
+	
 </main>
 				<footer>
 					<p> Blueberry Madness | <small>Copyright &copy; 2016 &middot; All Rights Reserved &middot;</small> | (123) 456-7890 | 2233 Coast View Dr, Malibu, CA 90265</p>
