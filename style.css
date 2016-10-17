@@ -1,0 +1,243 @@
+@font-face {
+    font-family: y2kboogie;
+    src: url(fonts/y2kboogie.ttf);
+}
+
+body {
+	
+	font-family: 'Roboto Condensed', sans-serif;
+	background: -webkit-linear-gradient(#868b8e, #534538);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #35496a;
+	border-radius:5px;
+}
+
+nav li {
+    float: left;
+	border-right: 2px solid #eaf4f6;
+
+}
+
+nav li a {
+    display: block;
+    color: #eaf4f6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	-webkit-transition: background-color .75 ease;
+	-moz-transition: background-color .75 ease;
+	-o-transition: background-color .75 ease;
+	transition: background-color .75 ease;
+	
+}
+
+
+nav li a:hover {
+    background-color: #534538;
+	color: #9bd2eb;
+	border-radius: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="date"],input[type="tel"], input[type="url"], input[type="checkbox"], select, textarea {
+	border: 1px solid #534538;
+	-webkit-transition: background-color .75 ease;
+	-moz-transition: background-color .75 ease;
+	-o-transition: background-color .75 ease;
+	transition: background-color .75 ease;
+}
+input:focus, textarea:focus, select:focus, option:focus {
+	background-color: #534538;
+	color: #faf5ef;
+	border: 2px solid #35496a;
+}
+input:hover, textarea:hover, input[type="checkbox"]:hover, select:hover, option:hover {
+	border: 2px solid #35496a;
+}
+select:hover {
+	border: 2px solid #35496a;
+	background:#868b8e;
+}
+
+
+.button {
+    background-color: #35496a;
+    border: none;
+    color: #faf5ef;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+	font-family: 'Roboto Condensed', sans-serif;
+	border-radius: 15px;
+}
+
+.button:hover {
+	background-color: #534538;
+	transform: scale(1.2,1.2);
+	border: 2px solid white;
+	-webkit-box-shadow: 3px 3px 5px #000;
+	-moz-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+	border-radius: 15px;
+}
+
+header {
+
+	width: 900px;
+	
+}
+#content {
+	margin: auto;
+	width: 900px;
+	background-color: #eaf4f6;
+	border-radius: 15px;
+	-webkit-box-shadow: 3px 3px 5px #000;
+	-moz-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+}
+
+
+#footer p {
+    background-color:#35496a;
+    color: #faf5ef;
+    clear:both;
+    text-align:center;
+	padding: 14px 16px;
+	border-radius: 0px 0px 15px 15px;
+}
+#footer {
+	border-radius: 15px;
+}
+
+mark {
+	background-color: #37FDFC;
+}
+
+p {
+	padding: 10px;
+	color:#070c20;
+}
+main div {
+	padding: 10px;
+	color: #070c20;
+}
+
+address {
+	padding:10px;
+}
+
+h1, h2, h3, h4 {
+	text-indent: 10px;
+	color: #070c20;
+	font-family: y2kboogie;
+	padding: 5px;
+}
+h1 {
+	font-size:40px;
+	padding-top:30px;
+	padding-left:15px;
+	text-shadow: 1px 1px 2px #534538;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 26px;
+}
+
+a:link {
+	
+	text-decoration:none;
+}
+
+a:hover {
+	color: #534538;
+	text-decoration:none;
+}
+
+figure {
+	position:relative;
+	width: 500px;
+	height: 350px;
+	-webkit-transition: all .6s ease;
+	-moz-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	transition: all .6s ease;
+	
+}
+
+figcaption{
+	position: absolute;
+	bottom:10px;
+	left: 20px;
+	right: 0;
+	font-size: 25px;
+	color: #faf5ef;
+	text-shadow:
+    3px 3px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+	opacity: 0;
+}
+
+
+figure:hover {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	transform: scale(1.3);
+	-webkit-box-shadow: 3px 3px 5px #000;
+	-moz-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+	
+}
+figure:hover figcaption {
+	opacity:1;
+}
+
+video, audio {
+	padding: 10px;
+}
+
+.label {
+	padding:10px;
+	display: block;
+}
+.checkbox {
+	display: block;
+	padding: 2px;
+}
+.legend {
+	font-family: y2kboogie;
+	font-size: 20px;
+	padding: 10px;
+}
+/***************************
+****************************
+Colors:
+
+blue: #35496a;
+grey: #868b8e;
+beige: #faf5ef;
+brown: #534538;
+black: #070c20;
+light blue:#37FDFC;
+
+light blue: #9bd2eb;
+medium blue: #adcad9;
+dark grey: #3d3d4f;
+dark blue: #587594;
+grey blue:#93b0c5;
+
+****************************
+***************************/

@@ -1,0 +1,289 @@
+@font-face {
+    font-family: czechtales;
+    src: url(fonts/czechtales.otf);
+}
+
+body {
+	
+	font-family: 'Roboto Condensed', sans-serif;
+	background: -webkit-linear-gradient(#adcad9, #587594);
+	
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #35496a;
+	border-radius:5px;
+}
+
+nav li {
+    float: left;
+	border-right: 2px solid #eaf4f6;
+
+}
+
+nav li a {
+    display: block;
+    color: #eaf4f6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	-webkit-transition: background-color .75 ease;
+	-moz-transition: background-color .75 ease;
+	-o-transition: background-color .75 ease;
+	transition: background-color .75 ease;
+	
+}
+
+
+nav li a:hover {
+    background-color: #9bd2eb;
+	color: #35496a;
+	
+}
+
+input[type="text"], input[type="email"], input[type="date"],input[type="tel"], input[type="url"], input[type="checkbox"], select, textarea {
+	border: 1px solid #35496a;
+	-webkit-transition: background-color .75 ease;
+	-moz-transition: background-color .75 ease;
+	-o-transition: background-color .75 ease;
+	transition: background-color .75 ease;
+}
+input:focus, textarea:focus, select:focus, option:focus {
+	background-color: #35496a;
+	color: #eaf4f6;
+	border: 2px solid #35496a;
+}
+input:hover, textarea:hover, input[type="checkbox"]:hover, select:hover, option:hover {
+	border: 2px solid #35496a;
+}
+select:hover {
+	border: 2px solid #35496a;
+	background:#868b8e;
+}
+
+
+.button {
+    background-color: #35496a;
+    border: none;
+    color: #eaf4f6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 14px;
+	font-family: 'Roboto Condensed', sans-serif;
+	border-radius: 15px;
+	
+}
+
+.button:hover {
+	background-color: #9bd2eb;
+	transform: scale(1.1,1.1);
+	border: 2px solid #35496a;
+	color: #35496a;
+	-webkit-box-shadow: 3px 3px 5px #000;
+	-moz-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+	
+}
+
+header {
+
+	width: 900px;
+	
+}
+#content {
+	margin: auto;
+	width: 900px;
+	background-color: #eaf4f6;
+	border-radius: 15px;
+	-webkit-box-shadow: 3px 3px 5px #000;
+	-moz-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+}
+
+
+#footer p {
+    background-color:#35496a;
+    color: #eaf4f6;
+    clear:both;
+    text-align:center;
+	padding: 14px 16px;
+	border-radius: 0px 0px 15px 15px;
+}
+#footer {
+	border-radius: 15px;
+}
+
+mark {
+	background-color: #37FDFC;
+}
+
+p {
+	padding: 10px;
+	color:#070c20;
+	margin-left:40px;
+}
+.recipelist {
+	margin-left: 40px;
+}
+
+main div {
+	padding: 10px;
+	color: #070c20;
+	margin-left:40px;
+}
+
+.buttondiv {
+	
+	display: inline-block;
+	
+	float: left;
+	
+  white-space: nowrap;
+	
+}
+
+address {
+	padding:10px;
+	margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+	text-indent: 10px;
+	color: #3d3d4f;
+	font-family: czechtales;
+	padding: 5px;
+	margin-left: 50px;
+	
+}
+h1 {
+	font-size:40px;
+	padding-top:30px;
+	padding-left:15px;
+	text-shadow: 1px 1px 2px #35496a;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 26px;
+}
+
+a:link {
+	
+	text-decoration:none;
+}
+
+a:hover {
+	color: #35496a;
+	text-decoration:none;
+}
+
+figure {
+	position:relative;
+	margin-left: 40px;
+	width: 500px;
+	height: 350px;
+	-webkit-transition: all .6s ease;
+	-moz-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	transition: all .6s ease;
+	
+}
+
+figcaption{
+	position: absolute;
+	bottom:10px;
+	left: 20px;
+	right: 0;
+	font-size: 25px;
+	color: #eaf4f6;
+	text-shadow:
+    3px 3px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+	opacity: 0;
+}
+
+
+figure:hover {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	transform: scale(1.3);
+	-webkit-box-shadow: 3px 3px 5px #000;
+	-moz-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+	
+}
+figure:hover figcaption {
+	opacity:1;
+}
+
+
+.label {
+	padding:10px;
+	display: block;
+}
+.checkbox {
+	display: block;
+	padding: 2px;
+	
+}
+.legend {
+	font-family: czechtales;
+	font-size: 20px;
+	padding: 10px;
+	margin-left: 50px;
+}
+
+
+
+section {
+	display: block;
+}
+
+video, audio {
+	position: relative;
+	margin-left: 40px;
+	padding:10px;
+}
+
+aside {
+	margin-left:40px;
+}
+
+.sylvfooter {
+	margin-left: 40px;
+}
+#footer p {
+	margin-left: 0px;
+}
+
+/***************************
+****************************
+Colors:
+
+blue: #35496a;
+grey: #868b8e;
+beige: #eaf4f6;
+brown: #35496a;
+black: #070c20;
+light blue:#37FDFC;
+
+light blue: #9bd2eb;
+medium blue: #adcad9;
+dark grey: #3d3d4f;
+dark blue: #587594;
+grey blue:#93b0c5;
+
+****************************
+***************************/
